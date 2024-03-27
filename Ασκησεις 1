@@ -1,0 +1,494 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": []
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "source": [
+        "#Ασκήσεις του μαθήματος \"Εισαγωγή στην Python 1 - Variables, data types (integers, floats, stings, boolean, lists, dictionaries), mathematical & comparison operators, functions & methods"
+      ],
+      "metadata": {
+        "id": "eZ6s1jOQBAty"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "\n",
+        "####**Άσκηση 2** (Προαιρετικά)\n",
+        "\n",
+        "**Try yourself**: Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και δημιουργήστε μεταβλητές με τα στοιχεία σας:\n",
+        "\n",
+        "*   το μικρό σας όνομα\n",
+        "*   το επίθετό σας\n",
+        "*   το email σας\n",
+        "*   το εξάμηνό σας\n",
+        "*   τυπώστε όλα μαζί τα παραπάνω στην οθόνη"
+      ],
+      "metadata": {
+        "id": "wiiXoX3tfVML"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "name=\"Dimosthenis\"\n",
+        "lastName=\"Dimoulias\"\n",
+        "email=\"d.dimoulias@gmail.com\"\n",
+        "sem=8\n",
+        "print(name,lastName,email,sem)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "AAtEtW0I1QqT",
+        "outputId": "bc08c69c-9a6a-41d9-d1c4-62a5d2a07ea0"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Dimosthenis Dimoulias d.dimoulias@gmail.com 8\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "####**Άσκηση 3**\n",
+        "\n",
+        "**Try yourself**: Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και κάνετε τα παρακάτω:\n",
+        "\n",
+        "* δημιουργήστε 3 μεταβλητές, όπου η καθεμιά θα έχει τη θερμοκρασία του αέρα όπως την καταγράψαμε το πρωί, το μεσημέρι και το βράδυ\n",
+        "* βρείτε το μέσο όρο των θερμοκρασιών\n",
+        "* βρείτε τη μέγιστη διαφορά των θερμοκρασιών\n",
+        "* δημιουργήστε μια νέα μεταβλητή που θα περιέχει την τιμή της μέσης θερμοκρασίας σε ακέραιο\n",
+        "* ελέγξτε τα αποτελέσματα τυπώνοντάς τα στην οθόνη\n"
+      ],
+      "metadata": {
+        "id": "yrhDlp7r8Jsi"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "t1=7\n",
+        "t2=15\n",
+        "t3=9\n",
+        "MOt=(t1+t2+t3)/3\n",
+        "print(\"Mesos Oros:\",MOt)\n",
+        "MaxDiff=t2-t1\n",
+        "print(\"Megisti Diafora:\",MaxDiff)\n",
+        "MOt2=int(MOt)\n",
+        "print(\"Akeraios Mesos Oros:\" ,MOt2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X3W4sgr61_M8",
+        "outputId": "789d054c-0f4f-41a7-8794-b65e2f233109"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mesos Oros: 10.333333333333334\n",
+            "Megisti Diafora: 8\n",
+            "Akeraios Mesos Oros: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "####**Άσκηση 4**\n",
+        "\n",
+        "**Try yourself**: Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και κάνετε τα παρακάτω:\n",
+        "\n",
+        "* δημιουργήστε μια μεταβλητή με την πόλη που μένετε και μία με το αγαπημένο σας ταξιδιωτικό προορισμό\n",
+        "* ελέγξτε την ομοιότητα του τύπου των μεταβλητών\n",
+        "* ελέγξτε την ισότητα των μεταβλητών\n",
+        "* ελέγξτε αν η μεταβλητή της πόλης είναι μικρότερη της μεταβλητής του ταξιδιωτικού προορισμού\n",
+        "\n",
+        "Τι νομίζετε ότι σημαίνει ότι ένα string είναι μεγαλύτερο, μικρότερο ή ίσο με ένα άλλο; (Γράψτε την απάντησή σας σε ένα νέο text cell ή σε ένα code cell σαν σχόλιο)\n"
+      ],
+      "metadata": {
+        "id": "pg9-mk1eTq2l"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "city= \"Athens\"\n",
+        "dest= \"Toronto\"\n",
+        "print(type(city)==type(dest))\n",
+        "print(city<dest)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2hPj49xh2hqd",
+        "outputId": "6c2966dc-656b-45a2-e677-a7044af3c426"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "####**Άσκηση 5**\n",
+        "\n",
+        "**Try yourself**: Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και κάνετε τα παρακάτω:\n",
+        "\n",
+        "* δημιουργήστε μια μεταβλητή με τιμή την datetime ημερομηνία δημοσίευσης ενός άρθρου: 2023-03-24T12:07:19+02:00\n",
+        "* απομονώστε την ημερομηνία και αποθηκεύστε τη σε μια μεταβλητή με κατάλληλο όνομα\n",
+        "* τυπώστε την ημερομηνία\n",
+        "* φτιάξτε ένα νέο code cell\n",
+        "* αποθηκεύστε σε διαφορετικές μεταβλητές το έτος, το μήνα και την ημέρα (**tip**: κάντε το ένα ένα και τυπώνετε για να βλέπετε αν το κάνετε σωστά)\n",
+        "* φτιάξτε ένα νέο code cell\n",
+        "* απομονώστε την ώρα (το 12:07:19) και αποθηκεύστε τη σε μια νέα μεταβλητή\n",
+        "* φτιάξτε ένα νέο code cell\n",
+        "* χρησιμοποιώντας τις μεταβλητές που φτιάξατε, δημιουργήστε μια νέα μεταβλητή με όνομα custom_daytime που θα περιέχει: <ημέρα>/<μήνας>/<έτος>, ώρα: <ώρα>\n",
+        "* και τυπώστε τη στην οθόνη"
+      ],
+      "metadata": {
+        "id": "jIk9BoTu-f05"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "datetime=\"2023-03-24T12:07:19+02:00\"\n",
+        "datetime\n",
+        "date=\"2023-03-24\"\n",
+        "print(date)\n",
+        "year=2023\n",
+        "print(year)\n",
+        "month=3\n",
+        "print(month)\n",
+        "day=24\n",
+        "print(day)\n",
+        "time=\"12:07:19\"\n",
+        "print(time)\n",
+        "custom_daytime= print(day,\"/\",month,\"/\",year,\",\",\"ώρα:\",time)\n",
+        "custom_daytime"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "U5SPqlxD5u5F",
+        "outputId": "48708e3c-325c-4aa5-9457-619062149739"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2023-03-24\n",
+            "2023\n",
+            "3\n",
+            "24\n",
+            "12:07:19\n",
+            "24 / 3 / 2023 , ώρα: 12:07:19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "####**Άσκηση 6**\n",
+        "\n",
+        "**Try yourself**: Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και κάνετε τα παρακάτω:\n",
+        "\n",
+        "1. Δημιουργήστε μια κενή λίστα με όνομα usersL\n",
+        "2. Φτιάξτε μια μεταβλητή με όνομα email1 και τιμή ένα email\n",
+        "3. Βρείτε το index του \"@\" (με function) και αποθηκεύστε το σε μια μεταβλητή με όνομα at1\n",
+        "4. Πάρτε (slice) το τμήμα του mail που έχει μόνο το όνομα, αποθηκεύστε το σε μια μεταβλητή με όνομα user1 και βάλτε το στη λίστα usersL\n",
+        "5. Επαναλάβετε τα βήματα 2-4 άλλη 1 φορά (κάντε copy-paste και αλλάξτε ό,τι χρειάεται)\n",
+        "6. Ταξινομήστε τα περιεχόμενα της λίστας με αύξουσα σειρά και\n",
+        "7. Τυπώστε τα περιεχόμενά της στην οθόνη\n",
+        "\n",
+        "**Tip**: χρησιμοποιήστε όσα κελιά θέλετε έτσι ώστε να ελέγχετε τι κάνετε σε κάθε βήμα"
+      ],
+      "metadata": {
+        "id": "_agWj9vpdYL9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "usersL=[]\n",
+        "email1=\"d.dimoulias@gmail.com\"\n",
+        "at1=email1.index(\"@\")\n",
+        "at1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "17t_SxwI7oOl",
+        "outputId": "5976ed9f-aec3-41dc-d645-ad3a534b79c4"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "11"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 6
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "user1= email1[:11]\n",
+        "usersL=[user1]\n",
+        "usersL"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qBKPAp0W7pjR",
+        "outputId": "ce7dc0f7-824d-4d5a-ba75-c4240858318b"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['d.dimoulias']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 7
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "email2=\"qwerty@gmail.com\"\n",
+        "at2=email2.index(\"@\")\n",
+        "print(at2)\n",
+        "user2=email2[:6]\n",
+        "print(user2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zm-4JfCX8s2v",
+        "outputId": "b6390d88-0de7-4c82-f921-5c0e84c46b2c"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n",
+            "qwerty\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "usersL=[user1,user2]\n",
+        "usersL.sort()\n",
+        "usersL"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vTE59asQ9C7P",
+        "outputId": "82354d5b-d4da-477c-f3a4-92f05171a70b"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "['d.dimoulias', 'qwerty']"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 13
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "\n",
+        "\n",
+        "---\n",
+        "\n",
+        "####**Άσκηση 7**\n",
+        "\n",
+        "**Try yourself**: Σ' αυτή την άσκηση θα φτιάξουμε μια λίστα στην οποία θα αποθηκεύουμε δίάφορα δεδομένα από άρθρα που δημοσιεύονται σε sites.\n",
+        "\n",
+        "Φτιάξτε ένα νέο κελί κώδικα (Code cell) ακριβώς κάτω από αυτό και κάνετε τα παρακάτω:\n",
+        "\n",
+        "1. Δημιουργήστε μια κενή λίστα όπου θα αποθηκεύετε τα δεδομένα των άρθρων\n",
+        "2. Δημιουργήστε ένα λεξικό με τα στοιχεία του πρώτου άρθρου που θα συλλέξετε από ένα site: \"Τίτλος\", \"Ημερομηνία\", \"Κατηγορία\", \"url\"\n",
+        "3. Επαναλάβετε το 2 για ακόμα ένα άρθρο\n",
+        "4. Προσθέστε τα λεξικά στη λίστα.\n",
+        "5. Τυπώστε στην οθόνη τον τίτλο του 2ου άρθρου\n",
+        "6. Προσθέστε και στα 2 άρθρα μια εγγραφή με το όνομα του αντίστοιχου site που πήρατε το άρθρο\n",
+        "7. Τυπώστε στην οθόνη το πλήθος των λεξικών που έχει η λίστα.\n",
+        "\n",
+        "**Tip**:Δουλέψτε τμηματικά και ελέγχετε σε κάθε βήμα αυτό που κάνετε."
+      ],
+      "metadata": {
+        "id": "KpVX9pHLNgB6"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list1=[]\n",
+        "dict1={\"Τίτλος\":\"Λίβανος: Δύο νεκροί από ισραηλινό πλήγμα στο ανατολικό τμήμα της χώρας\",\n",
+        "       \"Ημερομηνία\":\"27.03.2024\",\n",
+        "       \"Κατηγορία\":\"Κόσμος\",\n",
+        "       \"url\":\"https://www.protothema.gr/world/article/1481068/livanos-duo-nekroi-apo-israilino-pligma-sto-anatoliko-tmima-tis-horas/\"}\n",
+        "dict2= {\"Τίτλος\":\"Νέα ευρήματα στην Αμφίπολη – Τέλη Μαρτίου οι ανακοινώσεις\",\n",
+        "        \"Ημερομηνία\":\"27.03.2024\",\n",
+        "        \"Κατηγορία\":\"Κοινωνία\",\n",
+        "        \"url\":\"https://www.kathimerini.gr/society/562951366/nea-eyrimata-stin-amfipoli-teli-martioy-oi-anakoinoseis/\"}\n",
+        "list1=[dict1,dict2]\n",
+        "print(dict2[\"Τίτλος\"])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ijpogjMM-ijQ",
+        "outputId": "fe9f81f0-993f-4ea5-b9d7-2ac52604f731"
+      },
+      "execution_count": 22,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Νέα ευρήματα στην Αμφίπολη – Τέλη Μαρτίου οι ανακοινώσεις\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "dict1[\"siteName\"]= \"protothema.gr\"\n",
+        "dict2[\"siteName\"]= \"kathimerini.gr\"\n",
+        "print(dict1)\n",
+        "print(dict2)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9oz292PXDPAo",
+        "outputId": "bee3306c-323c-4532-80d6-d7b2b8e0b2c4"
+      },
+      "execution_count": 24,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "{'Τίτλος': 'Λίβανος: Δύο νεκροί από ισραηλινό πλήγμα στο ανατολικό τμήμα της χώρας', 'Ημερομηνία': '27.03.2024', 'Κατηγορία': 'Κόσμος', 'url': 'https://www.protothema.gr/world/article/1481068/livanos-duo-nekroi-apo-israilino-pligma-sto-anatoliko-tmima-tis-horas/', 'siteName': 'protothema.gr'}\n",
+            "{'Τίτλος': 'Νέα ευρήματα στην Αμφίπολη – Τέλη Μαρτίου οι ανακοινώσεις', 'Ημερομηνία': '27.03.2024', 'Κατηγορία': 'Κοινωνία', 'url': 'https://www.kathimerini.gr/society/562951366/nea-eyrimata-stin-amfipoli-teli-martioy-oi-anakoinoseis/', 'siteName': 'kathimerini.gr'}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(len(list1))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zE0a_rPBDnEL",
+        "outputId": "62fdaa25-dbf1-4c99-b394-0714720f0d17"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
